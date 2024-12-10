@@ -58,7 +58,7 @@ def generate_file(prefix="ada-contabilidade", max_lines=100, min_lines=10):
 
         with open(filename, "w") as file:
             for ln in range(lines):
-                file.write(f"linha {ln+1}\n")
+                file.write(f"linha :{ln+1}\n")
 
         logger.info(f"Arquivo gerado: {filename} com {lines} linhas")
         return filename
